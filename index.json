@@ -1,0 +1,16 @@
+[
+  {
+    "name": "香香腐宅",
+    "key": "boylove",
+    "fileName": "boylove.js",
+    "version": "1.0.0",
+    "description": "香香腐宅(BoyLove)漫画源，支持排行榜/每日更新/分类筛选/搜索，章节图片自动还原"
+  },
+  {
+    "name": "一耽女孩",
+    "key": "yidan",
+    "fileName": "yidan.js",
+    "version": "1.0.0",
+    "description": "一耽女孩漫画源，支持排行榜/最新更新/标签分类/搜索"
+  }
+]
