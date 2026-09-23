@@ -1,5 +1,7 @@
 # Venera-Next 漫画源：香香腐宅 / 一耽女孩
 
+仓库地址：<https://github.com/sy0sy0/V>
+
 为 [Venera-Next](https://github.com/CyrilPeng/Venera-Next) 编写的两个漫画源，移植自
 [keiyoushi/extensions-source](https://github.com/keiyoushi/extensions-source) 的同名扩展。
 
@@ -20,17 +22,19 @@
 2. 打开 Venera-Next →「漫画源」→ 选择「从文件导入」，选中 js 文件。
 3. 出现 `key` 已存在时可点「重新加载」覆盖。
 
-### 方式二：作为源仓库
+### 方式二：作为源仓库（推荐）
 
-把这几个文件（`index.json` + 两个 `.js`）放到任意可访问 HTTP 的地址下（例如 GitHub 仓库的 raw 地址、
-jsDelivr、自己搭的静态服务），然后在 Venera-Next 的源管理里把仓库地址填成指向 `index.json` 的 URL，刷新即可。
+本仓库已经可以直接当源仓库用，把下面任一地址填到 Venera-Next 的源管理里，刷新即可：
 
-- 若托管在 GitHub，raw 链接形如
-  `https://raw.githubusercontent.com/<用户名>/<仓库>/main/index.json`
-- 用 jsDelivr 则更快：
-  `https://cdn.jsdelivr.net/gh/<用户名>/<仓库>@main/index.json`
+- jsDelivr（推荐，速度快）：
+  `https://cdn.jsdelivr.net/gh/sy0sy0/V@main/index.json`
+- GitHub raw（jsDelivr 被墙时备用）：
+  `https://raw.githubusercontent.com/sy0sy0/V/main/index.json`
 
-> 源里 `url` 字段留空表示不做自动更新。想启用更新可把它改成该 js 文件自己的可访问地址。
+> 两个源的 `url` 字段已指向本仓库对应的 js 文件，因此在源管理里点「更新」即可拉到最新版本。
+
+想换到自己名下托管，把 `index.json` + 两个 `.js` 放到任意可访问 HTTP 的地址（GitHub raw、
+jsDelivr、静态服务都行），再把仓库地址指向 `index.json`；同时记得把源里 `url` 字段改成新地址。
 
 ---
 

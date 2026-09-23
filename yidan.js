@@ -13,7 +13,7 @@ class Yidan extends ComicSource {
     minAppVersion = "1.6.0"
 
     // update url
-    url = ""
+    url = "https://cdn.jsdelivr.net/gh/sy0sy0/V@main/yidan.js"
 
     settings = {
         domain: {
